@@ -1,6 +1,8 @@
 const path = require("path");
-const isDevelopment = process.env.NODE_ENV !== "production";
+const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
+const isDevelopment = process.env.NODE_ENV !== "production";
 
 module.exports = {
     mode: isDevelopment ? "development" : "production",
@@ -37,6 +39,12 @@ module.exports = {
         path: path.resolve(__dirname, "src/main/resources/static/built"),
         filename: "bundle.js",
     },
+    plugins: [
+        isDevelopment && new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, "frontend/src/index.html"),
+        }),
+        isDevelopment && new ReactRefreshWebpackPlugin(),
+    ].filter(Boolean),
     devtool: isDevelopment ? "cheap-module-source-map" : "source-map",
     devServer: {
         stats: "normal",
