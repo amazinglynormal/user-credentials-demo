@@ -1,0 +1,93 @@
+.header,
+.nav {
+  width: 100%;
+}
+
+.header {
+  margin-bottom: 2rem;
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.nav {
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand {
+  text-decoration: none;
+  color: #0a0635;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+}
+
+.navLinkPrimary,
+.navLinkSecondary {
+  text-decoration: none;
+  border-radius: 0.2rem;
+  padding: 0.5rem 0.8rem;
+  margin: 0 0.5rem;
+  font-size: 0.8rem;
+}
+
+.navLinkPrimary {
+  background-color: #0a438f;
+  color: white;
+  border: 1px solid transparent;
+  font-weight: 700;
+}
+
+.navLinkSecondary {
+  background-color: white;
+  color: #0a0635;
+  border: 1px solid #0a0635;
+  font-weight: 700;
+}
+
+.navLinkSecondary:hover {
+  background-color: #f6f6f6;
+}
+
+.navLinkPrimary:hover {
+  background-color: #083a7c;
+}
+
+@media screen and (min-width: 640px) {
+  .nav {
+    max-width: 640px;
+    padding: 1rem 1.5rem;
+  }
+
+  .navLinkPrimary,
+  .navLinkSecondary {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav {
+    max-width: 1024px;
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .nav {
+    max-width: 1280px;
+  }
+}
