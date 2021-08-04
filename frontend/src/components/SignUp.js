@@ -2,6 +2,7 @@ import { Panel } from "./Panel";
 import { FormInput } from "./FormInput";
 import { FormButton } from "./FormButton";
 import styles from "./SignUp.module.css";
+import { Link } from "react-router-dom";
 
 export const SignUp = () => {
   const onFormSubmit = (e) => {
@@ -23,9 +24,9 @@ export const SignUp = () => {
       </Panel>
       <p className={styles.logInOption}>
         Already have an account?{" "}
-        <a href="/" className={styles.logInLink}>
+        <Link to="/login" className={styles.logInLink}>
           Log in here
-        </a>
+        </Link>
       </p>
     </div>
   );
