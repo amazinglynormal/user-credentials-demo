@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
 export const Navbar = () => {
@@ -10,12 +11,12 @@ export const Navbar = () => {
           </a>
         </div>
         <div className={styles.navLinks}>
-          <a href="/" className={styles.navLinkSecondary}>
-            Sign in
-          </a>
-          <a href="/" className={styles.navLinkPrimary}>
+          <Link to="/login" className={styles.navLinkSecondary}>
+            Log in
+          </Link>
+          <Link to="/signup" className={styles.navLinkPrimary}>
             Sign up
-          </a>
+          </Link>
         </div>
       </nav>
     </header>
