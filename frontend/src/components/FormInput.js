@@ -3,7 +3,7 @@ import styles from "./FormInput.module.css";
 export const FormInput = ({ type, id, label, placeholder }) => {
   return (
     <div className={styles.container}>
-      <label for={id} className={styles.label}>
+      <label htmlFor={id} className={styles.label}>
         {label}
       </label>
       <input
