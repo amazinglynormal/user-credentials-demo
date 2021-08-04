@@ -1,0 +1,15 @@
+.formButton {
+  display: block;
+  background-color: #0a438f;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.2rem;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+}
+
+.formButton:hover {
+  background-color: #083a7c;
+}
