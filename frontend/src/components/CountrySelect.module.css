@@ -1,0 +1,23 @@
+.label {
+  margin-top: 0.8rem;
+  margin-right: 1rem;
+}
+
+.select {
+  border: 1px solid gray;
+  background-color: white;
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+  font-size: 0.75rem;
+  margin: 0.8rem 0;
+}
+
+.option {
+  text-overflow: ellipsis;
+}
+
+@media screen and (min-width: 640px) {
+  .select {
+    font-size: 1rem;
+  }
+}
