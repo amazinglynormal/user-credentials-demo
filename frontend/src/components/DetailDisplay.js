@@ -2,7 +2,7 @@ import styles from "./DetailDisplay.module.css";
 
 const passwordDots = "●●●●●●●●";
 
-export const DetailDisplay = ({ name, data }) => {
+export const DetailDisplay = ({ name, data, onChangeClicked }) => {
   return (
     <div className={styles.detailDisplay}>
       <div className={styles.detail}>
@@ -11,7 +11,12 @@ export const DetailDisplay = ({ name, data }) => {
           {name === "Password" ? passwordDots : data}
         </span>
       </div>
-      <button type="button" className={styles.changeButton}>
+      <button
+        type="button"
+        id={`change${name}`}
+        className={styles.changeButton}
+        onClick={onChangeClicked}
+      >
         Change
       </button>
     </div>
