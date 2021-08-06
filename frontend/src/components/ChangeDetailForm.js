@@ -9,34 +9,32 @@ export const ChangeDetailForm = ({
   onCancelledClicked,
 }) => {
   return (
-    <div>
-      <form>
-        <FormInput
-          type={type}
-          id={id}
-          label={label}
-          autocomplete={autocomplete}
-        />
-        <FormInput
-          type="password"
-          id="current-password"
-          label="Current Password"
-          autocomplete="current-password"
-        />
-        <div>
-          <button
-            type="button"
-            id={`cancel${id}`}
-            className={styles.cancelButton}
-            onClick={onCancelledClicked}
-          >
-            Cancel
-          </button>
-          <button type="submit" className={styles.confirmButton}>
-            Change
-          </button>
-        </div>
-      </form>
-    </div>
+    <form className={styles.form}>
+      <FormInput
+        type={type}
+        id={id}
+        label={label}
+        autocomplete={autocomplete}
+      />
+      <FormInput
+        type="password"
+        id="current-password"
+        label="Current Password"
+        autocomplete="current-password"
+      />
+      <div className={styles.buttonContainer}>
+        <button
+          type="button"
+          id={`cancel${id}`}
+          className={styles.cancelButton}
+          onClick={onCancelledClicked}
+        >
+          Cancel
+        </button>
+        <button type="submit" className={styles.confirmButton}>
+          Change
+        </button>
+      </div>
+    </form>
   );
 };

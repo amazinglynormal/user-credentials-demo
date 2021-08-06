@@ -1,7 +1,48 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.buttonContainer {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
 .cancelButton {
-  padding: 1rem 2rem;
+  padding: 0.5rem 1.5rem;
+  margin-right: 1rem;
+  color: black;
+  background-color: #bebebe;
+  border: 1px solid transparent;
+  border-radius: 0.2rem;
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .confirmButton {
-  padding: 1rem 2rem;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  background-color: #0a438f;
+  border: 1px solid transparent;
+  border-radius: 0.2rem;
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.cancelButton:hover,
+.confirmButton:hover {
+  cursor: pointer;
+}
+
+.cancelButton:hover {
+  background-color: #b3b1b1;
+}
+
+.confirmButton:hover {
+  background-color: #083a7c;
 }
