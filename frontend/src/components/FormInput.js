@@ -1,6 +1,6 @@
 import styles from "./FormInput.module.css";
 
-export const FormInput = ({ type, id, label, placeholder }) => {
+export const FormInput = ({ type, id, label, placeholder, autocomplete }) => {
   return (
     <div className={styles.container}>
       <label htmlFor={id} className={styles.label}>
@@ -12,6 +12,7 @@ export const FormInput = ({ type, id, label, placeholder }) => {
         name={id}
         placeholder={placeholder || ""}
         className={styles.input}
+        autoComplete={autocomplete}
       />
     </div>
   );
