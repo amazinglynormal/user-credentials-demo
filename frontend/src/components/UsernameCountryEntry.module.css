@@ -1,0 +1,18 @@
+.listItem {
+  padding: 0.75rem 2rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.dataContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.username {
+  color: black;
+}
+
+.country {
+  color: #083a7c;
+}
