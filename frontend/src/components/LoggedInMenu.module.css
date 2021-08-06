@@ -1,0 +1,86 @@
+.container {
+  position: relative;
+}
+
+.menuButton {
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  background-color: #0a438f;
+  color: white;
+  font-weight: 700;
+  border-radius: 0.2rem;
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.menuButton:hover {
+  background-color: #083a7c;
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  width: 10rem;
+  border: 1px solid #e5e7eb;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.menuContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.closeButton {
+  height: 36px;
+  width: 36px;
+  border: 1px solid transparent;
+  background-color: transparent;
+  padding: 0.25rem;
+  border-radius: 0.2rem;
+}
+
+.closeButton:hover {
+  background-color: #e5e7eb;
+  cursor: pointer;
+}
+
+.profileLink {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  padding: 0.5rem 0;
+  margin-bottom: 0.35rem;
+}
+
+.profileLink:hover {
+  background-color: #e5e7eb;
+  border-radius: 0.2rem;
+}
+
+.logOutButton {
+  background-color: #e5e7eb;
+  border: 1px solid transparent;
+  border-radius: 0.2rem;
+  padding: 0.5rem 0;
+}
+
+.logOutButton:hover {
+  background-color: #d7dadf;
+  cursor: pointer;
+}
