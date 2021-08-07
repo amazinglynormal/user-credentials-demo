@@ -1,23 +1,22 @@
 import { Link } from "react-router-dom";
+import { NavLinks } from "./NavLinks";
+
 import styles from "./Navbar.module.css";
+import { useState } from "react";
+import { LoggedInMenu } from "./LoggedInMenu";
 
 export const Navbar = () => {
+  const [loggedIn, setLoggedIn] = useState(true);
+
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
         <div>
-          <a href="/" className={styles.brand}>
+          <Link to="/" className={styles.brand}>
             DEMO
-          </a>
-        </div>
-        <div className={styles.navLinks}>
-          <Link to="/login" className={styles.navLinkSecondary}>
-            Log in
-          </Link>
-          <Link to="/signup" className={styles.navLinkPrimary}>
-            Sign up
           </Link>
         </div>
+        {loggedIn ? <LoggedInMenu /> : <NavLinks />}
       </nav>
     </header>
   );
