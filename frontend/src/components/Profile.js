@@ -5,7 +5,7 @@ import { DeleteAccount } from "./DeleteAccount";
 
 import styles from "./Profile.module.css";
 
-export const Profile = () => {
+const Profile = () => {
   return (
     <div>
       <h1>Profile</h1>
@@ -21,3 +21,5 @@ export const Profile = () => {
     </div>
   );
 };
+
+export default Profile;

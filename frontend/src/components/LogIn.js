@@ -4,7 +4,7 @@ import { FormButton } from "./FormButton";
 import styles from "./LogIn.module.css";
 import { Link } from "react-router-dom";
 
-export const LogIn = () => {
+const LogIn = () => {
   const onFormSubmit = (e) => {
     e.preventDefault();
     console.log("form submitted");
@@ -29,3 +29,5 @@ export const LogIn = () => {
     </div>
   );
 };
+
+export default LogIn;

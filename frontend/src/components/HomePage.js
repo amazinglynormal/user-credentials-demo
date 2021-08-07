@@ -2,7 +2,7 @@ import { UsernameCountryList } from "./UsernameCountryList";
 
 import styles from "./HomePage.module.css";
 
-export const HomePage = () => {
+const HomePage = () => {
   return (
     <div>
       <h1 className={styles.header}>Where do they want to go next?</h1>
@@ -10,3 +10,5 @@ export const HomePage = () => {
     </div>
   );
 };
+
+export default HomePage;
