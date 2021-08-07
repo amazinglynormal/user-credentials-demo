@@ -36,10 +36,15 @@ module.exports = {
         ],
     },
     output: {
-        path: path.resolve(__dirname, "src/main/resources/static/built"),
-        filename: "bundle.js",
+        path: path.resolve(__dirname, "src/main/resources"),
+        filename: "static/built/bundle.js",
+        clean: true,
     },
     plugins: [
+        !isDevelopment && new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, "frontend/src/index.html"),
+            filename: "templates/index.html"
+        }),
         isDevelopment && new HtmlWebpackPlugin({
             template: path.resolve(__dirname, "frontend/src/index.html"),
         }),
